@@ -1,7 +1,8 @@
-# Vue 3 + Vite
+# Vue 3 Sessions
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This is the frontend for the demo that has Vue + Spring Boot in 2 separate applications. To get this to work
+you need to have the `spring-mvc-sessions` application running on port `8080`. The reason this works is because of the environment variable set in `.env`. If the Spring Boot application is running on another port you will need to adjust the environment variable. 
 
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+```properties
+VITE_API_URL=http://localhost:8080
+```

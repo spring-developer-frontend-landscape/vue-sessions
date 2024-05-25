@@ -6,7 +6,7 @@ const sessions = ref([]);
 
 onMounted(() => {
   // call api and get a list of sessions
-  fetch("http://localhost:8080/api/sessions")
+  fetch("/api/sessions")
       .then((response) => {
         return response.json();
       })
